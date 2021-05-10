@@ -9,5 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: cd
+      run: cd bin
     - name: test
-      run: bash test.sh
+      run: ./lwivm $GITHUB_WORKSPACE/test/test
