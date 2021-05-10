@@ -10,12 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      run: make
-    - name: mv
-      run: mv $GITHUB_WORKSPACE/bin/lwivm $GITHUB_WORKSPACE/test/lwivm
-    - name: cd
-      run: cd $GITHUB_WORKSPACE/test
-    - name: ls
-      run: ls
-    - name: test
-      run: ./lwivm test
+      run: make && mv $GITHUB_WORKSPACE/bin/lwivm $GITHUB_WORKSPACE/test/lwivm && cd $GITHUB_WORKSPACE/test && ls && ./lwivm test
