@@ -14,16 +14,14 @@ int main(int argc, char *argv[]) {
         int instruction = (int)(byte & 0b11100000) / 32; //the magic number
         int bit = (int)(byte & 0b00010000) / 16; //the magic number
         int extra = (int)(byte & 0b00001111); //no magic number
-        int param1 = (int)(byte & 0b11110000) / 16; //the magic number
-        int param2 = (int)(byte & 0b00001111); //no magic number
+        int param1 = (int)(param & 0b11110000) / 16; //the magic number
+        int param2 = (int)(param & 0b00001111); //no magic number
         printf("%u",instruction); //debug
         if (instruction == 0) {
             //ldr
+            registers[extra] = param;
             if (bit) {
                 registers[extra] = RAM[param];
-            }
-            if (!bit){
-                registers[extra] = param;
             }
         }
         if (instruction == 1) {
