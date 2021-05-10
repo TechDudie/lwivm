@@ -9,5 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: mv
+      run: mv $GITHUB_WORKSPACE/bin/lwivm $GITHUB_WORKSPACE/test/lwivm
+    - name: cd
+      run: cd $GITHUB_WORKSPACE/test
     - name: test
-      run: ./bin/lwivm $GITHUB_WORKSPACE/test/test
+      run: ./lwivm test
