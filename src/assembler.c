@@ -4,6 +4,7 @@ int main(int argc, char *argv[]) {
     FILE *ptr;
     ptr = fopen(argv[1],"r");
     fread(program,sizeof(program), 1, ptr);
+    printf("%s",program);
     char line[16][65536];
     char *str;
     int counter;
