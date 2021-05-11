@@ -1,13 +1,21 @@
 #include <stdio.h>
 int main(int argc, char *argv[]) {
     //This is not a official processor, this is a test 1600 with some modifications.
+    //Check if nothing is specified
+    if (argc == 1) {
+        printf("Syntax: ./lwivm");
+    }
+    //Define variables
     unsigned char program[256];
     unsigned char RAM[256];
     unsigned char registers[16];
     char flag = 0;
+    //Open program
     FILE *ptr;
     ptr = fopen(argv[1],"rb");
+    //Read it
     fread(program,sizeof(program), 1, ptr);
+    //Begin execution
     for (int i = 0; i < 255; i++) {
         char byte = program[i];
         char param = program[i + 1];
