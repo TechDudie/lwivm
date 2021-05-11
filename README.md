@@ -16,6 +16,10 @@
 
 Simply run ```make``` to build.
 
+### Uninstalling
+
+Just run ```./uninstall.sh``` or ```bash uninstall.sh``` or ```sh uninstall.sh``` or something.
+
 ## Windows
 
 Umm... hold on...
