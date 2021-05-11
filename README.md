@@ -22,4 +22,13 @@ Just run ```./uninstall.sh``` or ```bash uninstall.sh``` or ```sh uninstall.sh``
 
 ## Windows
 
-Umm... hold on...
+### Dependencies
+* GCC
+
+### Building
+
+Run ```make.bat``` to build.
+
+### Uninstalling
+
+Run ```uninstall.bat``` to uninstall.
