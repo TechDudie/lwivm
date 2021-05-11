@@ -4,7 +4,9 @@
 ![Latest Build](https://github.com/TechDudie/lwivm/actions/workflows/make.yml/badge.svg)
 ![Latest Test](https://github.com/TechDudie/lwivm/actions/workflows/test.yml/badge.svg)
 
-## Building
+# Building
+
+## MacOS/Linux
 
 ### Dependencies
 * GCC
@@ -14,3 +16,6 @@
 
 Simply run ```make``` to build.
 
+## Windows
+
+Umm... hold on...
