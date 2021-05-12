@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "cpu/1600.c"
+#include "cpu/1601.c"
 int main(int argc, char *argv[]) {
     //This is not a official processor, this is a test 1600 with some modifications.
     //Check if nothing is specified
