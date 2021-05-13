@@ -3,7 +3,7 @@
 ### Status
 ![Latest Build](https://github.com/TechDudie/lwivm/actions/workflows/make.yml/badge.svg)
 ![Latest Test](https://github.com/TechDudie/lwivm/actions/workflows/test.yml/badge.svg)
-
+![](https://img.shields.io/github/repo-size/TechDudie/lwivm.svg?label=Repo%20size)
 # Building
 
 ## MacOS/Linux
